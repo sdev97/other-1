@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavBar />
+    <TodoList />
+    <StatusBar />
+    <ProgressBar />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TodoList from '@/components/TodoList.vue'
+import NavBar from '@/components/Navbar.vue'
+import StatusBar from '@/components/StatusBar.vue'
+import ProgressBar from '@/components/ProgressBar.vue'
 export default {
+
   name: 'App',
   components: {
-    HelloWorld
+    TodoList,
+    NavBar,
+    StatusBar,
+    ProgressBar,
   }
 }
 </script>
